@@ -1,29 +1,24 @@
-//  NEW BMI (BODY MASS INDEX)  CALCULATOR PROJECT 
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="../styles.css" />
     <title>BMI Calculator</title>
   </head>
   <body>
     <nav>
       <a href="/" aria-current="page">Home</a>
-      <a target="_blank" href=""
-        >Github Repository Link</a
-      >
+      <a target="_blank" href="https://github.com/amit-s4507/Web-Dev-Projects">Github Repository Link</a>
     </nav>
     <div class="container">
       <h1>BMI Calculator</h1>
       <form>
-        <p><label>Height in CM: </label><input type="text" id="height" /></p>
-        <p><label>Weight in KG: </label><input type="text" id="weight" /></p>
-        <button>Calculate</button>
+        <p><label>Height in CM: </label><input type="text" id="height" class="form-control"/></p>
+        <p><label>Weight in KG: </label><input type="text" id="weight" class="form-control"/></p>
+        <button type="submit" class="btn btn-primary">Calculate</button>
         <div id="results"></div>
         <div id="weight-guide">
           <h3>BMI Weight Guide</h3>
@@ -33,6 +28,6 @@
         </div>
       </form>
     </div>
+    <script src="script.js"></script>
   </body>
-  <script src="script.js"></script>
 </html>
